@@ -12,6 +12,7 @@
         rel="stylesheet">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -20,209 +21,310 @@
 
         body {
             font-family: Poppins, sans-serif;
+
             background: linear-gradient(
                 135deg,
                 #050816,
                 #0d1024,
                 #170d2e
             );
+
             color: white;
+
             overflow-x: hidden;
+
             min-height: 100vh;
         }
 
+
         body::before {
+
             content: "";
+
             position: fixed;
+
             width: 100%;
             height: 100%;
+
             background:
+
                 radial-gradient(
                     circle at top,
                     #00ffe522,
                     transparent 40%
                 ),
+
                 radial-gradient(
                     circle at bottom,
                     #8f00ff22,
                     transparent 45%
                 );
+
             z-index: -1;
         }
 
+
         header {
+
             text-align: center;
+
             padding: 40px;
         }
 
+
         header img {
+
             width: 150px;
             height: 150px;
+
             border-radius: 50%;
+
             border: 4px solid cyan;
+
             box-shadow: 0 0 25px cyan;
+
             object-fit: cover;
         }
 
+
         h1 {
+
             margin-top: 20px;
+
             font-family: Orbitron, sans-serif;
+
             font-size: 45px;
+
             color: #00fff2;
+
             text-shadow: 0 0 15px cyan;
         }
 
+
         header p {
+
             opacity: .8;
+
             margin-top: 10px;
         }
 
+
         .grid {
+
             display: grid;
+
             grid-template-columns: repeat(
                 auto-fit,
                 minmax(300px, 1fr)
             );
+
             gap: 30px;
+
             padding: 40px;
+
             max-width: 1400px;
+
             margin: auto;
         }
 
+
         .card {
+
             background: #10182bcc;
+
             border: 2px solid #00ffee55;
+
             border-radius: 20px;
+
             overflow: hidden;
+
             transition: .4s;
+
             box-shadow: 0 0 15px #000;
         }
 
+
         .card:hover {
+
             transform: translateY(-10px) scale(1.03);
+
             box-shadow: 0 0 25px cyan;
         }
 
+
         .card img {
+
             width: 100%;
+
             height: 190px;
+
             object-fit: cover;
+
             display: block;
         }
 
+
         .info {
+
             padding: 20px;
         }
 
+
         .info h2 {
+
             font-family: Orbitron, sans-serif;
+
             margin-bottom: 10px;
+
             color: #00ffe7;
+
             word-break: break-word;
         }
 
+
         .description {
+
             min-height: 70px;
+
             opacity: .8;
+
             line-height: 1.6;
         }
 
+
         .stats {
+
             margin-top: 12px;
+
             color: #b8ffff;
+
             font-size: 14px;
         }
 
+
         .language {
+
             display: inline-block;
+
             margin-top: 10px;
+
             padding: 5px 10px;
+
             border-radius: 20px;
+
             background: #00ffee22;
+
             border: 1px solid #00ffee55;
+
             color: #00ffe7;
+
             font-size: 13px;
         }
 
+
         .button-container {
+
             margin-top: 15px;
         }
 
+
         button {
+
             padding: 12px 25px;
+
             border: none;
+
             border-radius: 50px;
+
             cursor: pointer;
+
             background: linear-gradient(
                 90deg,
                 #00ffee,
                 #8f00ff
             );
+
             color: white;
+
             font-weight: bold;
+
             font-size: 15px;
+
             transition: .3s;
         }
 
+
         button:hover {
+
             transform: scale(1.08);
+
             box-shadow: 0 0 15px cyan;
         }
 
+
         a {
+
             text-decoration: none;
         }
 
-        .loading {
-            text-align: center;
-            font-size: 20px;
-            padding: 50px;
-            color: #00ffe7;
-        }
-
-        .error {
-            text-align: center;
-            padding: 50px;
-            color: #ff6b6b;
-        }
 
         footer {
+
             padding: 30px;
+
             text-align: center;
+
             opacity: .7;
         }
+
 
         @media (max-width: 600px) {
 
             header {
+
                 padding: 30px 20px;
             }
 
+
             header img {
+
                 width: 120px;
+
                 height: 120px;
             }
 
+
             h1 {
+
                 font-size: 32px;
             }
 
+
             .grid {
+
                 padding: 20px;
+
                 grid-template-columns: 1fr;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
     <header>
 
-        <!-- Avatar de GitHub de Thiaguitochino -->
+        <!-- Foto de perfil de GitHub -->
+
         <img
             src="https://avatars.githubusercontent.com/u/201989891?v=4"
-            alt="Thiaguitochino">
+            alt="Thiaguitochino"
+        >
 
         <h1>THIAGUITOCHINO</h1>
 
@@ -230,202 +332,328 @@
 
     </header>
 
+
     <main>
 
-        <div id="repos" class="grid">
+        <div class="grid">
 
-            <div class="loading">
-                Cargando repositorios...
+
+            <!-- ========================= -->
+            <!-- RECURSIVIDAD -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <img
+                    src="curso-programacion-recursividad.png"
+                    alt="Curso de programación - Recursividad"
+                >
+
+                <div class="info">
+
+                    <h2>recursividad</h2>
+
+                    <p class="description">
+                        Proyecto relacionado con programación y recursividad.
+                    </p>
+
+                    <p class="stats">
+                        ⭐ 0
+                        &nbsp; | &nbsp;
+                        🍴 0
+                    </p>
+
+                    <span class="language">
+                        HTML
+                    </span>
+
+                    <div class="button-container">
+
+                        <a
+                            href="https://github.com/thiaguitochino/recursividad"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button>
+                                Ver repositorio
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
+
+
+
+            <!-- ========================= -->
+            <!-- EXAMEN -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <img
+                    src="examen.jfif"
+                    alt="Examen"
+                >
+
+                <div class="info">
+
+                    <h2>examen</h2>
+
+                    <p class="description">
+                        Proyecto correspondiente a un examen.
+                    </p>
+
+                    <p class="stats">
+                        ⭐ 0
+                        &nbsp; | &nbsp;
+                        🍴 0
+                    </p>
+
+                    <span class="language">
+                        HTML
+                    </span>
+
+                    <div class="button-container">
+
+                        <a
+                            href="https://github.com/thiaguitochino/examen"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button>
+                                Ver repositorio
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================= -->
+            <!-- IA2026 -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <img
+                    src="ia.jfif"
+                    alt="Inteligencia Artificial"
+                >
+
+                <div class="info">
+
+                    <h2>ia2026</h2>
+
+                    <p class="description">
+                        Proyecto relacionado con Inteligencia Artificial.
+                    </p>
+
+                    <p class="stats">
+                        ⭐ 0
+                        &nbsp; | &nbsp;
+                        🍴 0
+                    </p>
+
+                    <span class="language">
+                        HTML
+                    </span>
+
+                    <div class="button-container">
+
+                        <a
+                            href="https://github.com/thiaguitochino/ia2026"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button>
+                                Ver repositorio
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================= -->
+            <!-- INDEX -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <img
+                    src="index.png"
+                    alt="Index HTML"
+                >
+
+                <div class="info">
+
+                    <h2>index</h2>
+
+                    <p class="description">
+                        Proyecto relacionado con el desarrollo de una página web.
+                    </p>
+
+                    <p class="stats">
+                        ⭐ 0
+                        &nbsp; | &nbsp;
+                        🍴 0
+                    </p>
+
+                    <span class="language">
+                        HTML
+                    </span>
+
+                    <div class="button-container">
+
+                        <a
+                            href="https://github.com/thiaguitochino/index"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button>
+                                Ver repositorio
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================= -->
+            <!-- BOOTSTRAP -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <img
+                    src="https://opengraph.githubassets.com/1/thiaguitochino/boostrap"
+                    alt="Boostrap"
+                >
+
+                <div class="info">
+
+                    <h2>boostrap</h2>
+
+                    <p class="description">
+                        Proyecto realizado utilizando Bootstrap.
+                    </p>
+
+                    <p class="stats">
+                        ⭐ 0
+                        &nbsp; | &nbsp;
+                        🍴 0
+                    </p>
+
+                    <span class="language">
+                        HTML
+                    </span>
+
+                    <div class="button-container">
+
+                        <a
+                            href="https://github.com/thiaguitochino/boostrap"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button>
+                                Ver repositorio
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================= -->
+            <!-- HTML -->
+            <!-- ========================= -->
+
+            <div class="card">
+
+                <img
+                    src="html.png"
+                    alt="HTML"
+                >
+
+                <div class="info">
+
+                    <h2>HTML</h2>
+
+                    <p class="description">
+                        Proyecto realizado utilizando HTML.
+                    </p>
+
+                    <p class="stats">
+                        ⭐ 0
+                        &nbsp; | &nbsp;
+                        🍴 0
+                    </p>
+
+                    <span class="language">
+                        HTML
+                    </span>
+
+                    <div class="button-container">
+
+                        <a
+                            href="https://github.com/thiaguitochino/HTML"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <button>
+                                Ver repositorio
+                            </button>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
 
     </main>
 
+
     <footer>
+
         Desarrollado con HTML • CSS • JavaScript 🚀
+
     </footer>
 
-
-    <script>
-
-        /*
-         * Usuario de GitHub que queremos mostrar
-         */
-        const usuario = "thiaguitochino";
-
-
-        /*
-         * Contenedor donde aparecerán las tarjetas
-         */
-        const contenedor = document.getElementById("repos");
-
-
-        /*
-         * API de GitHub
-         */
-        const api = `https://api.github.com/users/${usuario}/repos?sort=updated&per_page=100`;
-
-
-        /*
-         * Obtener repositorios
-         */
-        fetch(api)
-
-            .then(response => {
-
-                if (!response.ok) {
-                    throw new Error(
-                        "No se pudieron obtener los repositorios."
-                    );
-                }
-
-                return response.json();
-
-            })
-
-            .then(repositorios => {
-
-                /*
-                 * Limpiamos "Cargando..."
-                 */
-                contenedor.innerHTML = "";
-
-
-                /*
-                 * Si no hay repositorios
-                 */
-                if (repositorios.length === 0) {
-
-                    contenedor.innerHTML = `
-                        <div class="error">
-                            No se encontraron repositorios.
-                        </div>
-                    `;
-
-                    return;
-                }
-
-
-                /*
-                 * Crear una tarjeta por cada repositorio
-                 */
-                repositorios.forEach(repo => {
-
-                    /*
-                     * Imagen automática de GitHub.
-                     *
-                     * Cada repositorio tendrá su propia
-                     * imagen de preview.
-                     */
-                    const imagen = `https://opengraph.githubassets.com/1/${repo.full_name}`;
-
-
-                    /*
-                     * Descripción
-                     */
-                    const descripcion =
-                        repo.description ||
-                        "Proyecto desarrollado por Thiaguitochino.";
-
-
-                    /*
-                     * Lenguaje
-                     */
-                    const lenguaje =
-                        repo.language ||
-                        "Sin especificar";
-
-
-                    /*
-                     * Crear tarjeta
-                     */
-                    const card = document.createElement("div");
-
-                    card.className = "card";
-
-
-                    card.innerHTML = `
-
-                        <img
-                            src="${imagen}"
-                            alt="Vista previa de ${repo.name}"
-                            loading="lazy"
-                        >
-
-                        <div class="info">
-
-                            <h2>
-                                ${repo.name}
-                            </h2>
-
-                            <p class="description">
-                                ${descripcion}
-                            </p>
-
-                            <p class="stats">
-                                ⭐ ${repo.stargazers_count}
-                                &nbsp; | &nbsp;
-                                🍴 ${repo.forks_count}
-                            </p>
-
-                            <span class="language">
-                                ${lenguaje}
-                            </span>
-
-                            <div class="button-container">
-
-                                <a
-                                    href="${repo.html_url}"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                    <button>
-                                        Ver repositorio
-                                    </button>
-
-                                </a>
-
-                            </div>
-
-                        </div>
-                    `;
-
-
-                    /*
-                     * Agregar tarjeta al sitio
-                     */
-                    contenedor.appendChild(card);
-
-                });
-
-            })
-
-            .catch(error => {
-
-                console.error(error);
-
-                contenedor.innerHTML = `
-
-                    <div class="error">
-
-                        <h2>
-                            No se pudieron cargar los repositorios
-                        </h2>
-
-                        <p>
-                            Verificá tu conexión a Internet
-                            e intentá nuevamente.
-                        </p>
-
-                    </div>
-
-                `;
-
-            });
-
-    </script>
 
 </body>
 
